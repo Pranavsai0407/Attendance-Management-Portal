@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Location Tracker</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 50px;
+        }
+        #location {
+            font-size: 20px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h2>Your Location</h2>
+    <p id="location">Fetching your location...</p>
+
+    <script>
+        function getLocation() {
+            if ("geolocation" in navigator) {
+                navigator.geolocation.getCurrentPosition(
+                    (position) => {
+                        const latitude = position.coords.latitude;
+                        const longitude = position.coords.longitude;
+                        document.getElementById("location").innerText = 
+                            `Latitude: ${latitude}, Longitude: ${longitude}`;
+                    },
+                    (error) => {
+                        document.getElementById("location").innerText = 
+                            "Unable to retrieve location. Make sure location is enabled.";
+                    }
+                );
+            } else {
+                document.getElementById("location").innerText = "Geolocation is not supported by your browser.";
+            }
+        }
+
+        getLocation();
+    </script>
+</body>
+</html>

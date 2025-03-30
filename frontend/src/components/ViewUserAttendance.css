@@ -1,0 +1,123 @@
+/* General Styling */
+html, body {
+    font-family: 'Arial', sans-serif;
+    background: #121212;
+    color: #e0e0e0;
+    box-sizing: border-box;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+}
+
+/* Homepage Container */
+.homepage {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.content {
+    flex: 1;
+    text-align: center;
+    background: #1f1f1f;
+    padding: 2rem;
+}
+
+/* Navbar */
+.nav1 {
+    background: #1f1f1f;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+    padding: 1rem;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #0ba7f6;
+}
+
+/* Input Group */
+.input-group {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.searchbox {
+    display: flex;
+    justify-content: center; /* Centers horizontally */
+    align-items: center;  /* Centers vertically */
+    width: 77%;
+    margin: auto;
+    padding-bottom: 20px;
+}
+
+.input-field {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #444;
+    border-radius: 5px;
+    background: #222;
+    color: #e0e0e0;
+    outline: none;
+}
+
+.dropdown-button {
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.dropdown-button:hover {
+    color: #3eb6f2;
+}
+
+/* Attendance Table */
+.attendance-table {
+    width: 100%;
+    max-width: 900px;
+    margin: 20px auto;
+    border-collapse: collapse;
+    background: #222;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.attendance-table th, .attendance-table td {
+    padding: 12px;
+    border: 1px solid #444;
+    text-align: center;
+}
+
+.attendance-table th {
+    background: #333;
+    color: #0ba7f6;
+}
+
+.attendance-table tr:nth-child(even) {
+    background: #2a2a2a;
+}
+
+.attendance-table tr:hover {
+    background: #444;
+}
+
+/* Error Message */
+.error {
+    color: #ff4c4c;
+    font-weight: bold;
+}
+
+/* Footer */
+.footer {
+    background: #121212;
+    height: 60px;
+    color: #b0b0b0;
+    text-align: center;
+    padding: 1rem 0;
+    border-top: 1px solid #292929;
+}

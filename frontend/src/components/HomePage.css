@@ -1,0 +1,179 @@
+/* General Styles */
+body, html {
+  font-family: 'Arial', sans-serif;
+  background: #121212;
+  color: #e0e0e0;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Homepage Layout */
+.homepage {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Navbar */
+.nav1 {
+  background: #1f1f1f;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+  padding: 1rem 1rem;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-button {
+  background-color: #333;
+  color: white;
+  border: none;
+  padding: 3px 7px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 16px;
+}
+.dropdown-button:hover{
+  color: #3eb6f2;
+}
+
+.dm {
+  position: absolute;
+  top: 100%;
+  background-color: #444;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  z-index: 10;
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+.dropdown-item {
+  width: 100%;
+  display: block;
+  padding: 10px 23px;
+  color: white;
+  text-decoration: none;
+  background-color: #444;
+  margin: 0;
+}
+
+.dropdown-item:hover {
+  background-color: #555;
+}
+
+
+.logo {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #0ba7f6;
+}
+.logout-button{
+  font-size: 1rem;
+  color:#e0e0e0;
+  border-radius:7px;
+  background-color: #1f1f1f;
+  display: inline-block; /* Ensure alignment with links */
+  cursor: pointer;
+}
+.logout-button:hover{
+  color: #0ba7f6;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: flex-end;
+  align-items:center;
+  padding-right: 1.5rem;
+  gap: 1.5rem;
+}
+
+.nav-link {
+  font-size:18px ;
+  color: #b0b0b0;
+  transition: color 0.3s;
+}
+
+.nav-link:hover {
+  color: #3eb6f2;
+}
+
+/* Hero Section */
+.hero {
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  padding-top: 2rem;
+  background:  #1f1f1f;
+}
+
+.hero-title {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #3eb6f2;
+}
+
+/* Features Section */
+.features {
+  padding: 10rem;
+  background: #1f1f1f;
+  margin-bottom:auto;
+
+}
+
+.section-title {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #3eb6f2;
+  text-align: center;
+}
+
+.feature-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+}
+
+.feature-card {
+  background: #292929;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+  text-align: center;
+}
+
+.feature-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #3eb6f2;
+  margin-bottom: 0.5rem;
+}
+
+.feature-description {
+  color: #b0b0b0;
+  font-size: 1rem;
+}
+
+  
+.footer {
+  background: #121212;
+  height: 60px; /* Fixed height */
+  color: #b0b0b0;
+  padding: 1rem 0;
+  text-align: center;
+  font-size: 0.9rem;
+  border-top: 1px solid #292929;
+}
+
